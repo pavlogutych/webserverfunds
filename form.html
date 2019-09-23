@@ -3,6 +3,14 @@
 <html>
     <head>
         <title>Pavlo's Gym Inscription Form</title>
+        <script>
+            function getAge() {
+                var age, confirmation;
+                age = document.getElementById("age").value;
+                confirmation = (age < 16) ? "<h2> You need to be at least 16 years old to join us.</h2>":"<h2>Thank you for submitting your application, we will contact you soon.</h2>";
+                document.getElementById("submissionAnswer").innerHTML = confirmation;
+            }
+        </script>
     </head>
 
     <body>
@@ -19,6 +27,9 @@
 
                 <br/>e-mail<br/>
                     <input type="text" name="email"> <br/>
+                
+                <br/>Age<br/>
+                <input type="text" name="age" id="age"> <br/>
 
                 <br/>Service required<br/>
                     <select>
@@ -64,7 +75,8 @@
                     </tr>
                 </table><br/>
 
-                <button type="button" onclick="alert('Thank you for submitting your application, we will contact you soon.')">Subtmit</button>
+                <button onclick="getAge()">Submit Application</button>
+                <p id="submissionAnswer"></p>
             </form>
     </body>
 </html>
