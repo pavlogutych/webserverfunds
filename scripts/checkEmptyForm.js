@@ -14,6 +14,6 @@ function checkEmptyForm() {
         alert("Please fill up your e-mail");
     }
     else {
-        alert("Thank you for submitting your inscription, we will contact you soon.")
+        alert("Thank you for submitting your inscription, we will contact you soon.");
     }
 }
