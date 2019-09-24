@@ -3,14 +3,8 @@
 <html>
     <head>
         <title>Pavlo's Gym Inscription Form</title>
-        <script>
-            function getAge() {
-                var age, confirmation;
-                age = document.getElementById("age").value;
-                confirmation = (age < 16) ? "<h2> You need to be at least 16 years old to join us.</h2>":"<h2>Thank you for submitting your application, we will contact you soon.</h2>";
-                document.getElementById("submissionAnswer").innerHTML = confirmation;
-            }
-        </script>
+        <script src="scripts/checkEmptyForm.js"> </script>
+        
     </head>
 
     <body>
@@ -18,18 +12,15 @@
         <h2>A new way of working out!</h2>
 
         <h3>Inscription form</h3>
-            <form>
+            <form name="subs">              <!--names the form for script reference-->
                 <br/>First name<br/>
-                    <input type="text" name="first"> <br>
+                    <input type="text" name="first" id="first"> <br>
 
                 <br/>Last name<br/>
-                    <input type="text" name="last"> <br/>
+                    <input type="text" name="last" id="last"> <br/>
 
                 <br/>e-mail<br/>
-                    <input type="text" name="email"> <br/>
-                
-                <br/>Age<br/>
-                <input type="text" name="age" id="age"> <br/>
+                    <input type="text" name="email" id="email"> <br/>
 
                 <br/>Service required<br/>
                     <select>
@@ -74,9 +65,8 @@
                         <td><input type="radio" name="time" value="evening"> Evening</td>
                     </tr>
                 </table><br/>
-
-                <button onclick="getAge()">Submit Application</button>
-                <p id="submissionAnswer"></p>
+                <!--checks multiple functions to verify for empty form-->
+                <button onclick="checkEmptyForm()">Submit Inscription</button>
             </form>
     </body>
 </html>
