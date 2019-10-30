@@ -20,7 +20,7 @@
                     <li>Free Wi-Fi</li>
                 </ul>
             
-            For inscription please fill the following <a href="form.html">form</a>.
+            For inscription please fill the following <a href="form.php">form</a>.
         </div>
     </body>
 </html>
