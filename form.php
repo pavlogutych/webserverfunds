@@ -14,7 +14,7 @@
             <h2>A new way of working out!</h2>
 
             <h3>Inscription form</h3>
-                <form name="subs" onsubmit="return checkEmptyForm()" action="action.html" method="POST"> <!--name form for script reference-->
+                <form name="subs" onsubmit="return checkEmptyForm()" action="action.php" method="POST"> <!--name form for script reference-->
                     First Name<br/>
                         <input type="text" name="first" id="first" onkeyup="validateName(this)"> <br> <!--verifies for no spaces or # char-->
 
