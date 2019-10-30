@@ -7,8 +7,8 @@
 
     <body>
         <div>
-            Hi <?php echo htmlspecialchars($_POST['name']); ?> <?php echo htmlspecialchars($_POST['last']); ?>.
-            We will contact you soon at <?php echo htmlspecialchars($_POST['email']); ?>.
+            Hi <?php echo htmlspecialchars($_POST['first']); ?> <?php echo htmlspecialchars($_POST['last']); ?>. </br>
+            We will contact you soon at <?php echo htmlspecialchars($_POST['email']); ?>. </br>
             Thank you for submitting your application.
         </div>
     </body>
