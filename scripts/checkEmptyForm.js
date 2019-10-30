@@ -5,15 +5,15 @@ function checkEmptyForm() {
     var email = document.forms["subs"]["email"].value;
 
     if (first == "") {
-        alert("Please fill up your first name");
+        alert("Please fill up your first name"); return false;
     }
     else if (last == "") {
-        alert("Please fill up your last name");
+        alert("Please fill up your last name"); return false;
     }
     else if (email == "") {
-        alert("Please fill up your e-mail");
+        alert("Please fill up your e-mail"); return false;
     }
     else {
-        alert("Thank you for submitting your inscription, we will contact you soon.");
+        return true;
     }
 }

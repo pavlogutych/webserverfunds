@@ -14,7 +14,7 @@
             <h2>A new way of working out!</h2>
 
             <h3>Inscription form</h3>
-                <form name="subs"> <!--name form for script reference-->
+                <form name="subs" onsubmit="return checkEmptyForm()" action="action.html" method="POST"> <!--name form for script reference-->
                     First Name<br/>
                         <input type="text" name="first" id="first" onkeyup="validateName(this)"> <br> <!--verifies for no spaces or # char-->
 
@@ -67,7 +67,7 @@
                             <td><input type="radio" name="time" value="evening"> Evening</td>
                         </tr>
                     </table><br/>
-                    <button class="button" onclick="checkEmptyForm()">Submit Inscription</button> <!--checks function to verify for empty form-->
+                    <input class="button" type="submit" value="Submit Inscription"> <!--checks function to verify for empty form-->
                 </form>
         </div>
     </body>
