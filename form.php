@@ -24,47 +24,49 @@
                     <br/>e-mail<br/>
                         <input type="text" name="email" id="email"> <br/>
 
+                    <!--first, last and email are varchar(255) / service, days and time are int-->
+
                     <br/>Service required<br/>
                         <select name="service">
-                            <option value="gft">Group Fitness Classes</option>
-                            <option value="pt">Personal Training</option>
+                            <option value="1">Group Fitness Classes</option>
+                            <option value="2">Personal Training</option>
                         </select><br/><br/>
 
                     <table>
                         <tr>
                             <td>What days work best for you?</td>
-                            <td><input type="checkbox" name="day" value="monday"> Monday</td>
+                            <td><input type="checkbox" name="days" value="10000"> Monday</td> <!--values should be in binary and masking bits for different days (pending)--> 
+                        </tr> 
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" name="days" value="01000"> Tuesday</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="checkbox" name="day" value="tuesday"> Tuesday</td>
+                            <td><input type="checkbox" name="days" value="00100"> Wednesday</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="checkbox" name="day" value="wednesday"> Wednesday</td>
+                            <td><input type="checkbox" name="days" value="00010"> Thursday</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="checkbox" name="day" value="thursday"> Thursday</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="checkbox" name="day" value="friday"> Friday</td>
+                            <td><input type="checkbox" name="days" value="00001"> Friday</td>
                         </tr>
                     </table><br/>
 
                     <table>
                         <tr>
                             <td>Time of the day</td>
-                            <td><input type="radio" name="time" value="morning"> Morning</td>
+                            <td><input type="radio" name="time" value="1"> Morning</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="radio" name="time" value="afternoon"> Afternoon</td>
+                            <td><input type="radio" name="time" value="2"> Afternoon</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="radio" name="time" value="evening"> Evening</td>
+                            <td><input type="radio" name="time" value="3"> Evening</td>
                         </tr>
                     </table><br/>
                     <input class="button" type="submit" value="Submit Inscription"> <!--checks function to verify for empty form-->
